@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/background">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="❓ FAQ / Help Centre" android:textSize="24sp" android:textStyle="bold" android:textColor="@color/text_primary" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Quick answers before and after your repair." android:textColor="@color/text_secondary" android:layout_marginTop="4dp" android:layout_marginBottom="18dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="How is the repair cost estimated?" android:textStyle="bold" android:textSize="16sp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="The app shows the base service estimate. The final cost may change after technician inspection or if additional parts are required." android:layout_marginTop="4dp" android:layout_marginBottom="16dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="How long will my repair take?" android:textStyle="bold" android:textSize="16sp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Each service shows an estimated completion time. Actual time can vary with device condition, workload and spare-parts availability." android:layout_marginTop="4dp" android:layout_marginBottom="16dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="How is my branch selected?" android:textStyle="bold" android:textSize="16sp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="TechFix checks your location and tries the nearest branch that has an available suitable technician and the required spare part." android:layout_marginTop="4dp" android:layout_marginBottom="16dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Do repairs include a warranty?" android:textStyle="bold" android:textSize="16sp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Eligible completed repairs display their warranty period and estimated expiry date in Appointment Details." android:layout_marginTop="4dp" android:layout_marginBottom="16dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="How can I contact my branch?" android:textStyle="bold" android:textSize="16sp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Open your appointment and tap Quick Contact Branch to open your phone dialer with the assigned branch number." android:layout_marginTop="4dp" android:layout_marginBottom="16dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Can I rate the repair?" android:textStyle="bold" android:textSize="16sp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Yes. After a repair is completed or paid, open Appointment Details and submit a 1–5 star rating with an optional comment." android:layout_marginTop="4dp" />
+    </LinearLayout>
+</ScrollView>

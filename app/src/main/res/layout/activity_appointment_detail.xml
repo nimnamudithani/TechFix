@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Appointment Detail"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <TextView android:id="@+id/tvServiceName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18sp" android:textStyle="bold" />
+        <TextView android:id="@+id/tvBranchName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" />
+        <TextView android:id="@+id/tvTechnicianName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" />
+        <TextView android:id="@+id/tvDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" />
+        <TextView android:id="@+id/tvPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" />
+        <TextView android:id="@+id/tvStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold" android:layout_marginTop="12dp" />
+
+        <TextView
+            android:id="@+id/tvEstimatedCompletion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/tvWarranty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnContactBranch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="☎ Quick Contact Branch"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:id="@+id/btnViewReceipt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🧾 View Digital Receipt"
+            android:layout_marginTop="10dp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/reviewSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginTop="16dp">
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="⭐ Rate your technician" android:textStyle="bold" android:textSize="16sp" />
+            <TextView android:id="@+id/tvReviewTechnician" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Technician" android:textSize="13sp" android:layout_marginTop="4dp" android:layout_marginBottom="4dp" />
+            <RatingBar android:id="@+id/ratingBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="5" android:stepSize="1" android:rating="5" />
+            <EditText android:id="@+id/etReviewComment" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Share a short review (optional)" android:minLines="2" android:gravity="top" />
+            <Button android:id="@+id/btnSubmitReview" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Submit Review" android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivDevicePhoto"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            android:background="#22000000"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnTakePhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Take Device Photo"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/btnMarkCompleted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mark as Completed"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:id="@+id/btnMarkPaid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mark as Paid"
+            android:layout_marginTop="12dp" />
+
+    </LinearLayout>
+</ScrollView>

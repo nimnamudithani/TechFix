@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Profile header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/primary"
+                android:padding="28dp">
+
+                <TextView
+                    android:id="@+id/tvAvatarInitials"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:text="?"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary"
+                    android:gravity="center"
+                    android:background="@drawable/bg_avatar" />
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_on_primary"
+                    android:layout_marginTop="12dp" />
+
+                <TextView
+                    android:id="@+id/tvEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="#DDFFFFFF"
+                    android:layout_marginTop="2dp" />
+
+                <TextView
+                    android:id="@+id/tvRoleBadge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/bg_status_pill"
+                    android:backgroundTint="@color/accent"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="5dp"
+                    android:layout_marginTop="10dp" />
+            </LinearLayout>
+
+            <!-- Menu -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:id="@+id/menuManage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/bg_menu_card"
+                    android:padding="16dp"
+                    android:layout_marginBottom="10dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:visibility="gone">
+
+                    <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_action_manage" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/manage_techfix"
+                        android:textSize="15sp"
+                        android:textColor="@color/text_primary"
+                        android:layout_marginStart="14dp" />
+
+                    <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_chevron_right" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menuRepairHistory"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:gravity="center_vertical"
+                    android:background="@drawable/bg_menu_card" android:padding="16dp"
+                    android:layout_marginBottom="10dp" android:clickable="true" android:focusable="true">
+                    <TextView android:layout_width="22dp" android:layout_height="22dp" android:text="📜" android:textSize="18sp" android:gravity="center"/>
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                        android:text="Repair History" android:textSize="15sp" android:textColor="@color/text_primary" android:layout_marginStart="14dp"/>
+                    <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_chevron_right"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menuReceipts"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:gravity="center_vertical"
+                    android:background="@drawable/bg_menu_card" android:padding="16dp"
+                    android:layout_marginBottom="10dp" android:clickable="true" android:focusable="true">
+                    <TextView android:layout_width="22dp" android:layout_height="22dp" android:text="🧾" android:textSize="18sp" android:gravity="center"/>
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                        android:text="Digital Receipts" android:textSize="15sp" android:textColor="@color/text_primary" android:layout_marginStart="14dp"/>
+                    <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_chevron_right"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menuWarrantyReviews"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:gravity="center_vertical"
+                    android:background="@drawable/bg_menu_card" android:padding="16dp"
+                    android:layout_marginBottom="10dp" android:clickable="true" android:focusable="true">
+                    <TextView android:layout_width="22dp" android:layout_height="22dp" android:text="⭐" android:textSize="18sp" android:gravity="center"/>
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                        android:text="Warranty &amp; Ratings / Reviews" android:textSize="15sp" android:textColor="@color/text_primary" android:layout_marginStart="14dp"/>
+                    <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_chevron_right"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menuChangePassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/bg_menu_card"
+                    android:padding="16dp"
+                    android:layout_marginBottom="10dp"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_lock" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/change_password"
+                        android:textSize="15sp"
+                        android:textColor="@color/text_primary"
+                        android:layout_marginStart="14dp" />
+
+                    <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_chevron_right" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menuHelp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/bg_menu_card"
+                    android:padding="16dp"
+                    android:layout_marginBottom="10dp"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <TextView android:layout_width="22dp" android:layout_height="22dp" android:text="❓" android:textSize="18sp" android:gravity="center" />
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="FAQ / Help Centre" android:textSize="15sp" android:textColor="@color/text_primary" android:layout_marginStart="14dp" />
+                    <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_chevron_right" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menuLogout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/bg_menu_card"
+                    android:padding="16dp"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_logout" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/logout"
+                        android:textSize="15sp"
+                        android:textColor="@color/danger"
+                        android:layout_marginStart="14dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/bottom_nav" />
+
+</LinearLayout>

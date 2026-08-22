@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/background">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="24dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="🧾 Digital Repair Receipt" android:textSize="24sp" android:textStyle="bold"
+            android:textColor="@color/text_primary" android:layout_marginBottom="18dp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="20dp" android:background="@drawable/bg_menu_card">
+            <TextView android:id="@+id/tvReceiptNo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold" android:textSize="18sp"/>
+            <TextView android:id="@+id/tvReceiptCustomer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp"/>
+            <TextView android:id="@+id/tvReceiptService" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+            <TextView android:id="@+id/tvReceiptBranch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+            <TextView android:id="@+id/tvReceiptAppointment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+            <TextView android:id="@+id/tvReceiptAmount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold" android:textSize="19sp" android:layout_marginTop="18dp"/>
+            <TextView android:id="@+id/tvReceiptMethod" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+            <TextView android:id="@+id/tvReceiptPaidAt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+            <TextView android:id="@+id/tvReceiptStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold" android:textColor="@color/success" android:layout_marginTop="12dp"/>
+        </LinearLayout>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Thank you for choosing TechFix." android:gravity="center"
+            android:layout_marginTop="20dp" android:textColor="@color/text_secondary"/>
+    </LinearLayout>
+</ScrollView>

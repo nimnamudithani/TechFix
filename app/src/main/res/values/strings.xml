@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TechFix</string>
+    <string name="app_tagline">Computer &amp; Mobile Repair Services</string>
+
+    <!-- Home -->
+    <string name="home_default_greeting">Hi there, Good Morning! 👋</string>
+    <string name="home_service_tagline">Computer &amp; Mobile Repair Services 🔧</string>
+    <string name="role_staff">STAFF</string>
+    <string name="home_hero_title">TechFix 🛠️</string>
+    <string name="home_hero_subtitle">Fast, reliable repairs — booked in a tap</string>
+    <string name="home_search_hint">What are you looking for? e.g. laptop</string>
+    <string name="book_a_repair">Book a Repair</string>
+    <string name="manage_techfix">Manage TechFix</string>
+    <string name="gallery">Gallery</string>
+    <string name="branches">Branches</string>
+    <string name="our_branches">Our Branches 🏢</string>
+    <string name="greeting_format">Hi %1$s, Good %2$s! 👋</string>
+
+    <!-- Login / Register -->
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Log In</string>
+    <string name="register_prompt">Don\'t have an account? Register</string>
+    <string name="create_account">Create Account</string>
+    <string name="register_subtitle">Join TechFix to book and track repairs</string>
+    <string name="full_name">Full name</string>
+    <string name="phone_number">Phone number</string>
+    <string name="register">Register</string>
+
+    <!-- Bottom navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_activities">Activities</string>
+    <string name="nav_notifications">Notifications</string>
+    <string name="nav_account">Account</string>
+
+    <!-- Common actions -->
+    <string name="delete">Delete</string>
+    <string name="edit_price">Edit Price</string>
+    <string name="edit_stock">Edit Stock</string>
+    <string name="change_password">Change Password</string>
+    <string name="logout">Log Out</string>
+</resources>

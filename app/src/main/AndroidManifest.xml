@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.TechFix">
+
+        <!-- Google Maps API key no longer needed - map now uses OpenStreetMap (osmdroid) instead -->
+
+        <activity android:name=".activities.SplashActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activities.LoginActivity" android:exported="false" />
+
+        <activity android:name=".activities.RegisterActivity" />
+        <activity android:name=".activities.HomeActivity" />
+        <activity android:name=".activities.BookAppointmentActivity" />
+        <activity android:name=".activities.SearchServicesActivity" />
+        <activity android:name=".activities.SampleImagesActivity" />
+        <activity android:name=".activities.AdminActivity" />
+        <activity android:name=".activities.AdminAppointmentsActivity" />
+        <activity android:name=".activities.AdminServicesActivity" />
+        <activity android:name=".activities.AdminTechniciansActivity" />
+        <activity android:name=".activities.AdminSparePartsActivity" />
+        <activity android:name=".activities.AdminSampleImagesActivity" />
+        <activity android:name=".activities.ChangePasswordActivity" />
+        <activity android:name=".activities.BranchMapActivity" />
+        <activity android:name=".activities.ActivitiesActivity" />
+        <activity android:name=".activities.NotificationsActivity" />
+        <activity android:name=".activities.AccountActivity" />
+        <activity android:name=".activities.AppointmentDetailActivity" />
+        <activity android:name=".activities.AppointmentHistoryActivity" />
+        <activity android:name=".activities.FaqActivity" />
+        <activity android:name=".activities.ReceiptActivity" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.nibm.techfix.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <!-- SQLite, Content Providers & Offline Application deliverable:
+             real ContentProvider fronting the spare_part table. See
+             database/SparePartContract.java and database/SparePartProvider.java -->
+        <provider
+            android:name=".database.SparePartProvider"
+            android:authorities="com.nibm.techfix.provider"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

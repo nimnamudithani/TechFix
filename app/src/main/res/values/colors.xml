@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand system: warm orange + charcoal -->
+    <color name="primary">#F97316</color>
+    <color name="primary_dark">#242424</color>
+    <color name="primary_light">#FDBA74</color>
+    <color name="primary_tint">#FFF3E8</color>
+
+    <color name="accent">#F97316</color>
+    <color name="accent_dark">#C2410C</color>
+    <color name="charcoal">#2B2B2B</color>
+    <color name="charcoal_dark">#1F1F1F</color>
+    <color name="charcoal_soft">#464646</color>
+
+    <color name="background">#F7F7F5</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="header_gradient_start">#2D2D2D</color>
+    <color name="header_gradient_end">#1F1F1F</color>
+
+    <color name="text_primary">#242424</color>
+    <color name="text_secondary">#6B6B6B</color>
+    <color name="text_on_primary">#FFFFFF</color>
+    <color name="border">#E7E3DE</color>
+    <color name="icon_tile_bg">#FFF0E5</color>
+
+    <color name="success">#15803D</color>
+    <color name="warning">#F59E0B</color>
+    <color name="danger">#DC2626</color>
+
+    <color name="tint_green_bg">#EAF7EF</color>
+    <color name="tint_red_bg">#FDECEC</color>
+    <color name="tint_gray_bg">#F1F1EF</color>
+</resources>

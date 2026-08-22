@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical"
+    android:background="@color/background">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:gravity="center_vertical" android:padding="20dp">
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Repair Gallery" android:textSize="22sp" android:textStyle="bold" android:textColor="@color/text_primary"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Manage sample repaired-device images" android:textSize="12sp" android:textColor="@color/text_secondary" android:layout_marginTop="3dp"/>
+        </LinearLayout>
+        <Button android:id="@+id/btnAddImage" style="@style/Widget.TechFix.AdminPrimaryAction"
+            android:layout_width="wrap_content" android:layout_height="46dp" android:text="+ Add Image" android:layout_marginStart="12dp"/>
+    </LinearLayout>
+    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/border"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvSampleImages" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:padding="12dp" android:clipToPadding="false"/>
+</LinearLayout>

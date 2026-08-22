@@ -1,0 +1,64 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.nibm.techfix'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.nibm.techfix"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    // Core Android
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    // Networking (Web Services & Remote Data deliverable) - used by
+    // GeocodeClient to call the free OpenStreetMap Nominatim REST API
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.12.0'
+
+    // Image loading (for repair photos / spare part images)
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+
+    // Location (Locations/GPS deliverable) - used for nearest-branch calculation
+    implementation 'com.google.android.gms:play-services-location:21.1.0'
+
+    // OpenStreetMap for the visible branch map - no API key or billing account needed
+    implementation 'org.osmdroid:osmdroid-android:6.1.18'
+
+    // Camera & Image Integration deliverable - repair photos and admin sample
+    // images both use ActivityResultContracts.TakePicture() + FileProvider
+    // (androidx.activity/androidx.core, already pulled in transitively by
+    // appcompat), which is simpler and more reliable for a still-photo
+    // capture flow than a live CameraX preview. The CameraX artifacts were
+    // removed since nothing in the app actually calls them - if a future
+    // screen wants a live in-app camera preview instead of handing off to
+    // the system camera app, re-add androidx.camera:camera-{core,camera2,
+    // lifecycle,view} at that point.
+
+    // Testing
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+}
